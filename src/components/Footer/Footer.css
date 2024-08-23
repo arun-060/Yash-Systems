@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 320px;
+  background-color: #6a006a;
+  color: #fff;
+  padding: 20px;
+}
+
+.left-section {
+  width: 40%;
+}
+
+.right-section {
+  width: 40%;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.copyright {
+  margin-top: 20px;
+}
+
+.location,
+.phone,
+.email {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.location i,
+.phone i,
+.email i {
+  margin-right: 10px;
+  font-size: 20px;
+}

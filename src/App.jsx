@@ -1,10 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import Footer from './components/Footer/Footer';
+import Navbar from './components/Navbar/Navbar';
+
 
 function App() {
   return (
     <div>
-      <h1>This is Yash Systems</h1>
+      <Navbar />
+      <Footer />
     </div>
   );
 }
