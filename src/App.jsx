@@ -8,6 +8,8 @@ function App() {
     <div>
       <Navbar />
       <Hero />
+      {/* <Card text="computer" image={a1}/> */}
+      
       <Footer />
     </div>
   );

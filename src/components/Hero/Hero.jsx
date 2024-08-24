@@ -2,9 +2,18 @@ import React from 'react'
 import './Hero.css'
 import hero_1 from './../../assets/hero_1.png'
 import hero_2 from './../../assets/hero_2.png'
+import a1 from './../../assets/a1.png'
+import a2 from './../../assets/a2.png'
+import a3 from './../../assets/a3.png'
+import a4 from './../../assets/a4.png'
+import Card from '../Card/Card'
+import Features from '../Features/Features'
+
+
 
 function Hero() {
   return (
+    <>
     <div className='hero'>
         <div className="contianer-hero">
             <div className="hero_1-contaner">
@@ -24,7 +33,8 @@ function Hero() {
             </div>
         </div>
     </div>
-
+    <Features />
+    </>
   )
 }
 
