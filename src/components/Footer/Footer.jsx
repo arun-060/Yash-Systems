@@ -10,7 +10,7 @@ import location from './../../assets/location.png'
 
 function Footer() {
   return (
-    <div className="container">
+    <div className="container-footer">
       <div className="left-section">
         <h2>Useful Links</h2>
         <ul>

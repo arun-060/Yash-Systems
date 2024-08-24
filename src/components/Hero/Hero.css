@@ -1,0 +1,34 @@
+.hero {
+    width: 100%
+}
+
+.container-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90ww;
+    margin: 0 auto;
+}
+
+.text-image {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 66px;
+}
+
+.hero_1-contaner {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: 90vw;
+    padding: 32px;
+}
+
+.text-image {
+    padding: 16px;
+}

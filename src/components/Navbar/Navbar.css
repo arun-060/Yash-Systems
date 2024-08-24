@@ -1,9 +1,11 @@
 nav {
-    background-color: #f2f2f2; 
+    background-color: #DDECE6; 
     padding: 1rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100vw;
+    height: 40px;
   }
   
   .container {
@@ -22,6 +24,7 @@ nav {
   .logo img {
     width: 50px; 
     margin-right: 10px;
+    mix-blend-mode:darken;
   }
   
   .logo h1 {

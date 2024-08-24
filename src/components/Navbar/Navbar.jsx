@@ -1,12 +1,13 @@
 import React from 'react'
 import './Navbar.css'
+import logo from './../../assets/logo.png'
 
 function Navbar() {
   return (
     <nav>
       <div className="container">
         <div className="logo">
-          <img src="your-logo.png" alt="Yash System" />
+          <img src={logo} alt="Yash System" />
           <h1>Yash System</h1>
         </div>
         <ul className="nav-links">
