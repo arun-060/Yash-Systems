@@ -1,42 +1,36 @@
-.card{
-    width: 350px;
-    height: 450px;
-    border: 1px solid black; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    margin: 20px;
-    
-}
-.card img{
-   overflow: hidden;
-   width: 100%;
-   top: -10px;
-   margin-top: -40px;
-    object-fit: contain;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-.cardTitle{
-    font-size: larger;
-}
-.card input{
-    width: 130px;
-    height: 35px;
-    border-radius: 5px;
-    background-color: #007BFF;
-    border: none;
-    color: white;
-    transition: ease-in-out;
-    transition-duration: 0.2s;
+.card {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 240px; /* Fixed width for each card */
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+    margin: 10px; /* Space between cards */
 }
 
-input:hover{
-    cursor: pointer;
-    scale: 1.1;
-    transition: ease-in-out;
-    transition-duration: 0.2s;
+.cardTitle {
+    font-size: 20px; /* Adjust as needed */
+    margin: 10px 0; /* Add margin for spacing */
 }
- 
+
+.card img {
+    width: 100%; /* Ensure image takes full width of card */
+    height: 150px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures images fit without distortion */
+}
+
+.card input[type="button"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%; /* Full width button */
+}
+
+.card input[type="button"]:hover {
+    background-color: #0056b3;
+}

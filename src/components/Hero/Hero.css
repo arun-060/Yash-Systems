@@ -21,6 +21,7 @@
 .title {
     text-align: center;
     font-size: 66px;
+    color: #FF32C1;
 }
 
 .hero_1-contaner img {
@@ -34,4 +35,5 @@
     padding-bottom: 32px;
     font-size:larger;
 }
+
 

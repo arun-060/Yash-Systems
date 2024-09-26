@@ -1,14 +1,14 @@
-import React from 'react'
-import './Card.css'
+import React from 'react';
+import './Card.css';
 
-function Card({text, image}) {
-  return (
-    <div className='card'>
-        <img src={image} alt='' />
-        <h3 className='cardTitle'>{text}</h3>
-        <input type="button" value="BOOK NOW" />
-    </div>
-  )
+function Card({ text, image }) {
+    return (
+        <div className='card'>
+            <img src={image} alt={text} className="card-image" />
+            <h3 className='cardTitle'>{text}</h3> {/* Ensure the title is rendered correctly */}
+            <input type="button" value="BOOK NOW" />
+        </div>
+    );
 }
 
-export default Card
+export default Card;
