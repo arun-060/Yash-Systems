@@ -1,0 +1,59 @@
+.aim-container {
+    text-align: center;
+    background-color: #e0f0e9; /* Light green background */
+    padding: 80px 20px; /* More padding for space around the content */
+  }
+  
+  .aim-heading {
+    font-size: 3.5rem; /* Bigger font size for the heading */
+    font-weight: bold;
+    color: red;
+    margin-bottom: 40px; /* More space below the heading */
+  }
+  
+  .aim-description {
+    font-size: 1.3rem;
+    color: #333;
+    margin: 0 auto 50px auto;
+    line-height: 1.8; /* Increased line-height for readability */
+    max-width: 900px; /* Max width for the text block */
+  }
+  
+  .aim-services {
+    display: flex;
+    justify-content: space-between; /* Space between the service boxes */
+    align-items: flex-start; /* Align items at the top */
+    gap: 60px; /* Space between each box */
+    margin-top: 50px; /* Add more space between the description and the service boxes */
+  }
+  
+  .service-box {
+    text-align: center;
+    width: 300px; /* Increase the width of each service box */
+    margin: 0 auto;
+    background-color: #fff; /* Add a subtle background to the box */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a light shadow */
+  }
+  
+  .service-icon {
+    width: 100px; /* Larger icon */
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .service-box h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 15px;
+  }
+  
+  .service-box p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.5; /* Space between lines */
+    margin-bottom: 10px;
+  }
+  

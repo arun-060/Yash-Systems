@@ -8,8 +8,10 @@ import a3 from './../../assets/a3.png'
 import a4 from './../../assets/a4.png'
 import Card from '../Card/Card'
 import Features from '../Features/Features'
-
-
+import Service from '../Service/Service'
+import Aim from '../Aim/Aim'
+import YashSystems from '../YashSystems/YashSystems'
+import Feedback from '../Feedback/Feedback'
 
 function Hero() {
   return (
@@ -34,6 +36,10 @@ function Hero() {
         </div>
     </div>
     <Features />
+    <Service />
+    <Aim />
+    <YashSystems />
+    <Feedback />
     </>
   )
 }
