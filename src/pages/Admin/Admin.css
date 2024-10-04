@@ -1,0 +1,148 @@
+.admin-dashboard {
+    font-family: Arial, sans-serif;
+    background-color: #e0f2f1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px 20px; */
+    background-color: #fff;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    background-color: #e91e63;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .admin-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 15px;
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .sidebar {
+    width: 300px;
+    background-color: #4a0e4e;
+    color: white;
+    padding: 20px;
+  }
+  
+  .notifications-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .notification-icon {
+    margin-right: 10px;
+  }
+  
+  .notification-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .notification-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .user-icon {
+    margin-right: 10px;
+  }
+  
+  .status-dot {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    margin-left: auto;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .message-header {
+    background-color: #4a0e4e;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-icon.large {
+    font-size: 24px;
+  }
+  
+  .message-content {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .user-message {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  .reject-button, .accept-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .reject-button {
+    background-color: #d32f2f;
+  }
+  
+  .accept-button {
+    background-color: #388e3c;
+  }

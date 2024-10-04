@@ -1,0 +1,166 @@
+.product-page {
+    font-family: Arial, sans-serif;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    /* padding: 20px; */
+    height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #f0f0f0;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .company-name {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .search-button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-left: none;
+    padding: 8px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  .main-nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .main-nav li {
+    margin-left: 20px;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .main-content {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .product-image-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #e6f3ff;
+    height: 90vh;
+  }
+  
+  .product-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-details {
+    flex: 1;
+    padding: 20px;
+    height: 90vh;
+  }
+  
+
+  .product-features{
+    margin-bottom: 50px;
+  }
+  .product-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-bottom: 50px;
+  }
+  
+  .product-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .stars {
+    color: #ffc107;
+    margin-right: 10px;
+  }
+  
+  .reviews {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .product-price {
+    margin-bottom: 50px;
+  }
+  
+  .discount {
+    color: #e53935;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .price {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .product-features {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  
+  .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .feature img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+  }
+  
+  .book-now-button {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .book-now-button:hover {
+    background-color: #ffa000;
+  }

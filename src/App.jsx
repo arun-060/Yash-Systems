@@ -6,9 +6,10 @@ import Footer from './components/Footer/Footer';
 import Homepage from './pages/Homepage';
 import AboutUs from './pages/AboutUs/AboutUs';
 import Contact from './pages/Contact/Contact';
-// import Service from './pages/Service/Service';
 import Service from './pages/Service/Service';
 import Support from './pages/Support/Support';
+import AuthPage from './pages/AuthPage';
+import AdminDashboard from './pages/AdminDashboard/AdminDashboard';
 
 function App() {
   return (
@@ -17,11 +18,13 @@ function App() {
         <Navbar />
         <main>
           <Routes>
+            <Route path="/auth" element={<AuthPage />} />
             <Route path="/" element={<Homepage />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/service" element={<Service />} />
             <Route path="/support" element={<Support />} />
+            <Route path="/admin-dashboard" element={<AdminDashboard />} />
           </Routes>
         </main>
         {/* <Footer /> */}
@@ -31,3 +34,4 @@ function App() {
 }
 
 export default App;
+
