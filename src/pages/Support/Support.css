@@ -1,0 +1,124 @@
+.support-page {
+    font-family: Arial, sans-serif;
+    background-color: #e6f7ff;
+    min-height: 100vh;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+  }
+  
+  nav ul li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 0.5rem;
+  }
+  
+  .sign-up-btn {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  main {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .faq-section {
+    flex: 1;
+  }
+  
+  .faq-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .support-options {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .support-card {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .support-card .icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .questions-section {
+    flex: 2;
+  }
+  
+  .question {
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+  
+  .question button {
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .question h3 {
+    margin: 0;
+  }
+  
+  .question p {
+    padding: 1rem;
+    background-color: #f0f8ff;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+  
+    .support-options {
+      flex-direction: column;
+    }
+  }

@@ -6,7 +6,6 @@ import Footer from '../components/Footer/Footer';
 function Homepage() {
   return (
     <div>
-      <Navbar />
       <Hero />
       <Footer />
     </div>
