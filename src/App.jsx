@@ -1,16 +1,13 @@
 import './App.css';
-import Footer from './components/Footer/Footer';
-import Navbar from './components/Navbar/Navbar';
-import Hero from './components/Hero/Hero';
+import Homepage from './pages/Homepage';
 
 function App() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar />
       <Hero />
-      {/* <Card text="computer" image={a1}/> */}
-      
-      <Footer />
+      <Footer /> */}
+      <Homepage />
     </div>
   );
 }
