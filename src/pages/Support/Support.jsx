@@ -12,10 +12,11 @@ function Support() {
   return (
     <div className="support-page">
       <header>
-        <div className="logo">
-        <img src={logo} alt="Yash Systems Logo" width="40" height="40" />
-        </div>
         <nav>
+        <div className="logo">
+          <img src={logo} alt="Yash Systems Logo" />
+        </div>
+
           <ul>
             <li>
               <span>Products</span>
@@ -30,8 +31,9 @@ function Support() {
               <ChevronDown className="icon" />
             </li>
           </ul>
+          <button className="sign-up-btn">Sign up - it's Free</button>
         </nav>
-        <button className="sign-up-btn">Sign up - it's Free</button>
+        
       </header>
       <main>
         <section className="faq-section">

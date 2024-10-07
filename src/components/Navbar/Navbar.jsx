@@ -1,9 +1,19 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import './Navbar.css'
-import logo from './../../assets/logo.png'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
+import logo from './../../assets/logo.png';
 
 function Navbar() {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State for dropdown visibility
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen); // Toggle dropdown visibility
+  };
+
+  const closeDropdown = () => {
+    setIsDropdownOpen(false); // Close dropdown
+  };
+
   return (
     <nav>
       <div className="container">
@@ -17,10 +27,20 @@ function Navbar() {
           <li><Link to="/service">Service</Link></li>
           <li><Link to="/support">Support</Link></li>
           <li><Link to="/contact">Contact</Link></li>
+          <li>
+            <button onClick={toggleDropdown} className="signin-button">Sign In</button>
+            {isDropdownOpen && (
+              <div className="dropdown">
+                <Link to="/auth?type=user" onClick={closeDropdown}>User Login</Link>
+                <Link to="/auth?type=admin" onClick={closeDropdown}>Admin Login</Link>
+                <Link to="/auth?type=logout" onClick={closeDropdown}>Logout</Link>
+              </div>
+            )}
+          </li>
         </ul>
       </div>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

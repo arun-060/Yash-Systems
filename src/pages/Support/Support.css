@@ -9,14 +9,22 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #ffffff;
+    background-color: #DDECE6;
+    width: 90dvw;
+    height: 40px;
+    border-radius: 70px;
   }
   
   .logo img {
-    width: 40px;
-    height: 40px;
+    margin-left: 12px;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
   }
   
+  nav{
+    border-radius: 15px;
+  }
   nav ul {
     display: flex;
     list-style-type: none;
@@ -36,12 +44,14 @@
   }
   
   .sign-up-btn {
+    font-size:  17px;
     background-color: #ff69b4;
     color: white;
     border: none;
     padding: 0.5rem 1rem;
-    border-radius: 4px;
+    border-radius: 19px;
     cursor: pointer;
+    margin-right: 10px;
   }
   
   main {
@@ -65,7 +75,7 @@
   }
   
   .support-card {
-    background-color: #ffffff;
+    background-color: #DDECE6;
     padding: 1rem;
     border-radius: 8px;
     display: flex;
@@ -85,7 +95,7 @@
   }
   
   .question {
-    background-color: #ffffff;
+    background-color: #DDECE6;
     border-radius: 8px;
     margin-bottom: 1rem;
     overflow: hidden;
@@ -109,8 +119,9 @@
   
   .question p {
     padding: 1rem;
-    background-color: #f0f8ff;
+    background-color: #efcdde;
     margin: 0;
+    color: white;
   }
   
   @media (max-width: 768px) {

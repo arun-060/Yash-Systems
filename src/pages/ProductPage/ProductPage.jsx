@@ -4,7 +4,7 @@ import './ProductPage.css';
 const ProductPage = () => {
   return (
     <div className="product-page">
-      <header className="header">
+      {/* <header className="header">
         <div className="logo-container">
           <img src="/placeholder.svg?height=40&width=40" alt="Yash Systems Logo" className="logo" />
           <h1 className="company-name">Yash Systems</h1>
@@ -23,7 +23,7 @@ const ProductPage = () => {
             <li><a href="#contact">CONTACT US</a></li>
           </ul>
         </nav>
-      </header>
+      </header> */}
       <main className="main-content">
         <div className="product-image-container">
           <img src="/placeholder.svg?height=400&width=600" alt="HP Laptop 15s" className="product-image" />

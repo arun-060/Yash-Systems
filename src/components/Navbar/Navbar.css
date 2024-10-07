@@ -1,51 +1,78 @@
 nav {
-    background-color: #DDECE6; 
-    padding: 1rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    height: 40px;
-    /* margin-bottom: 4px; */
-  }
-  
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo img {
-    width: 50px; 
-    margin-right: 10px;
-    mix-blend-mode:darken;
-  }
-  
-  .logo h1 {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .nav-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .nav-links li {
-    margin-left: 20px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #333; 
-    font-weight: bold;
-  }
+  background-color: #DDECE6; 
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px; 
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: relative; /* Added for dropdown positioning */
+}
+
+.nav-links li {
+  margin-right: 20px;
+  position: relative; /* Added for dropdown positioning */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333; 
+  font-weight: bold;
+}
+
+.signin-button {
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dropdown {
+  position: absolute; /* Positioning dropdown */
+  top: 100%; /* Position below the button */
+  left: 0; /* Align with the left edge */
+  background-color: white; /* Background color for dropdown */
+  border: 1px solid #ccc; /* Border for dropdown */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for dropdown */
+  z-index: 10; /* Ensure it appears above other elements */
+}
+
+.dropdown a {
+  display: block; /* Display each item as a block */
+  padding: 10px; /* Padding for dropdown items */
+  color: #333; /* Text color */
+  text-decoration: none; /* Remove underline */
+}
+
+.dropdown a:hover {
+  background-color: #f0f0f0; /* Hover effect for dropdown items */
+}

@@ -1,81 +1,35 @@
-.feedback-container {
-    width: 100dvw;
-    margin: auto;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    box-sizing: border-box; /* Ensures padding doesn't affect overall width */
-  }
-  
-  header {
-    text-align: center; /* Centers the header content */
-    margin-bottom: 30px; /* Adds more space below the header */
-  }
-  
-  header h1 {
-    font-size: 32px;
-    color: #000;
-    margin-bottom: 10px; /* Space between the main title and the subtitle */
-  }
-  
-  header h2 {
-    font-size: 24px;
-    color: #4a90e2; /* A blue color similar to the image */
-    margin-bottom: 10px; /* Space between the subtitle and the paragraph */
-  }
-  
-  header p {
-    font-size: 16px;
-    color: #666;
-  }
-  
-  .reviews {
-    display: flex; /* Aligns children (review cards) in a row */
-    justify-content: space-between; /* Distributes space between items evenly */
-    margin: 20px 0 40px; /* Top and bottom margin for the entire reviews container */
-  }
-  
-  .review-card {
-    background-color: #fff;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-left: 5px solid #4a90e2; /* Blue bar on the left side */
-    width: calc(33.333% - 20px); /* Subtracting margin from width */
-    margin: 0 10px 30px; /* Space between cards and additional bottom margin */
-  }
-  
-  .review-header {
-    display: flex;
-    align-items: center;
-  }
-  
-  .user-icon {
-    background-color: #4a90e2;
-    color: #fff;
-    font-size: 24px;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    margin-right: 10px;
-  }
-  
-  .user-info h3 {
-    margin: 0;
-    color: #000;
-  }
-  
-  .review-details {
-    font-size: 14px;
-    color: #999;
-  }
-  
-  .review-content p {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-  }
-  
+.review-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.review-cards {
+  display: flex; /* Use Flexbox for horizontal layout */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 10px 0; /* Padding for the scroll area */
+  scrollbar-width: thin; /* Firefox: makes scrollbar thin */
+}
+
+.review-cards::-webkit-scrollbar {
+  height: 8px; /* Adjust scrollbar height */
+}
+
+.review-cards::-webkit-scrollbar-thumb {
+  background: #007bff; /* Scrollbar color */
+  border-radius: 4px; /* Round scrollbar */
+}
+
+.review-cards::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
+
+.review-card {
+  min-width: 250px; /* Minimum width for each card */
+  margin: 0 10px; /* Spacing between cards */
+  padding: 15px;
+  border: 1px solid #ccc; /* Border around card */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #fff; /* White background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  flex: 0 0 auto; /* Prevent cards from shrinking */
+}

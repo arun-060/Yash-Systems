@@ -12,10 +12,12 @@ import Service from '../Service/Service'
 import Aim from '../Aim/Aim'
 import YashSystems from '../YashSystems/YashSystems'
 import Feedback from '../Feedback/Feedback'
+import Navbar from '../Navbar/Navbar'
 
 function Hero() {
   return (
     <>
+    {/* <Navbar/> */}
     <div className='hero'>
         <div className="contianer-hero">
             <div className="hero_1-contaner">

@@ -6,7 +6,7 @@ import Footer from './components/Footer/Footer';
 import Homepage from './pages/Homepage';
 import AboutUs from './pages/AboutUs/AboutUs';
 import Contact from './pages/Contact/Contact';
-import Service from './pages/Service/Service';
+import Service from './pages/Service/ServiceDetails/ServiceDetails';
 import Support from './pages/Support/Support';
 import AuthPage from './pages/AuthPage';
 import AdminDashboard from './pages/AdminDashboard/AdminDashboard';
@@ -18,7 +18,8 @@ function App() {
         <Navbar />
         <main>
           <Routes>
-            <Route path="/auth" element={<AuthPage />} />
+            <Route path="/auth/user" element={<AuthPage />} />
+            <Route path="/auth/admin" element={<AuthPage />} />
             <Route path="/" element={<Homepage />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/contact" element={<Contact />} />
@@ -27,11 +28,10 @@ function App() {
             <Route path="/admin-dashboard" element={<AdminDashboard />} />
           </Routes>
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Router>
   );
 }
 
 export default App;
-
