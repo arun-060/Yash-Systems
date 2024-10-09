@@ -11,7 +11,8 @@ import Features from '../Features/Features'
 import Service from '../Service/Service'
 import Aim from '../Aim/Aim'
 import YashSystems from '../YashSystems/YashSystems'
-import Feedback from '../Feedback/Feedback'
+// import Feedback from '../Feedback/Feedback'
+import Testimonial from '../Testimonial/Testimonial'
 import Navbar from '../Navbar/Navbar'
 
 function Hero() {
@@ -39,9 +40,9 @@ function Hero() {
     </div>
     <Features />
     <Service />
-    <Aim />
-    <YashSystems />
-    <Feedback />
+    {/* <Aim /> */}
+    {/* <YashSystems /> */}
+    <Testimonial />
     </>
   )
 }

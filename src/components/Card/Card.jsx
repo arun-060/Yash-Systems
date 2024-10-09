@@ -6,7 +6,7 @@ function Card({ text, image }) {
         <div className='card'>
             <img src={image} alt={text} className="card-image" />
             <h3 className='cardTitle'>{text}</h3> {/* Ensure the title is rendered correctly */}
-            <input type="button" value="BOOK NOW" />
+            <input type="button" value="BUY" />
         </div>
     );
 }

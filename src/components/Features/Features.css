@@ -1,21 +1,32 @@
+/* Reset CSS for better control */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Orbitron', sans-serif;
-    background-color: #DDECE6;
+    background-color: #DDECE6; /* Adjust as needed */
     color: #e94560;
 }
 
 .features {
     width: 100%;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 4rem 2rem;
     box-sizing: border-box;
+    background-color: transparent; /* Ensure background is transparent */
+}
+
+.features .header{
+    background: transparent;
 }
 
 .features-title {
@@ -28,15 +39,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 3px;
     animation: glow 1.5s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-    from {
-        text-shadow: 0 0 5px #e94560, 0 0 10px #e94560, 0 0 15px #e94560;
-    }
-    to {
-        text-shadow: 0 0 10px #e94560, 0 0 20px #e94560, 0 0 30px #e94560, 0 0 40px #e94560;
-    }
+    padding-right: 200px;
 }
 
 .mape {
@@ -48,6 +51,30 @@ body {
     max-width: 1400px;
 }
 
+/* View All Products Button Container */
+.view-all-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns the button to the right */
+    width: 100%;
+    margin-top: 2rem; /* Adjusts spacing between products and button */
+    background-color: transparent; /* Ensure it's transparent */
+}
+
+.view-all-button{
+    background: rgb(106, 106, 220);
+    border-radius: 25px;
+    margin: 10px;
+}
+
+.view-all-container button {
+    background: transparent; /* Button background */
+    border: none; /* No border */
+    color: #e94560; /* Text color */
+    font-size: 1.2rem; /* Font size */
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* Card Styles */
 .card {
     background: rgba(71, 216, 235, 0.77);
     backdrop-filter: blur(10px);
@@ -68,7 +95,6 @@ body {
 }
 
 .card:hover {
-    transform: perspective(1000px) rotateY(10deg) translateY(-5px);
     box-shadow: 0 12px 48px 0 rgba(31, 38, 135, 0.5);
 }
 
@@ -93,7 +119,7 @@ body {
 }
 
 .card input[type="button"] {
-    background-color: #e94560;
+    background-color: rgb(106, 106, 220);
     color: #fff;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -135,11 +161,11 @@ body {
     .features-title {
         font-size: 3rem;
     }
-    
+
     .mape {
         gap: 2rem;
     }
-    
+
     .card {
         min-width: 250px;
         max-width: 300px;
@@ -150,7 +176,7 @@ body {
     .features-title {
         font-size: 2.5rem;
     }
-    
+
     .card {
         min-width: 100%;
         height: auto;

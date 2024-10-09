@@ -1,6 +1,7 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for programmatic navigation
 import Card from '../Card/Card';
-import './Features.css';  // Ensure this path is correct
+import './Features.css';
 
 import a1 from './../../assets/a1.png';
 import a2 from './../../assets/a2.png';
@@ -27,9 +28,20 @@ const imgdata = [
 ];
 
 function Features() {
+    const navigate = useNavigate(); // Initialize useNavigate hook
+
+    const handleViewAllClick = () => {
+        navigate('/products'); // Navigate to the products page
+    };
+
     return (
         <div className="features">
-            <h1 className="features-title">SALES & SERVICE WE OFFERED</h1>
+            <div className="header">
+                <h1 className="features-title">PRODUCTS WE OFFERED</h1>
+                <button className="view-all-button" onClick={handleViewAllClick}>
+                    View All Products
+                </button>
+            </div>
             <div className="mape">
                 {imgdata.map((data, index) => (
                     <Card 

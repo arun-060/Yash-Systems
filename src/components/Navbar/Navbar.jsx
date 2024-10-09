@@ -23,10 +23,10 @@ function Navbar() {
         </div>
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About Us</Link></li>
+          {/* <li><Link to="/about">About Us</Link></li> */}
           <li><Link to="/service">Service</Link></li>
-          <li><Link to="/support">Support</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/products">Products</Link></li>
+          {/* <li><Link to="/contact">Contact</Link></li> */}
           <li>
             <button onClick={toggleDropdown} className="signin-button">Sign In</button>
             {isDropdownOpen && (
@@ -44,3 +44,6 @@ function Navbar() {
 }
 
 export default Navbar;
+
+
+
